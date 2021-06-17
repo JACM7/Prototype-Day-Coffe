@@ -1,0 +1,1867 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #804000;
+}
+
+/*Seccion de header*/
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+    width: 100%;
+    height: 90px;
+    background: #000;
+}
+
+header .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+header .logo {
+    position: absolute;
+    left: 80px;
+}
+
+header .logo img {
+    width: 100px;
+    height: 85px;
+    border-radius: 50%;
+}
+/* Termina header */
+
+/* Empieza Barra de Navegacion */
+nav {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #DBA37D;
+}
+/* Termina Barra de Navegacion */
+
+/* Empieza Seccion de Productos */
+.productos {
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10000;
+}
+
+.productos .list {
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos .list.active {
+    border-top: 2px solid red;
+}
+
+.productos .list img {
+    width: 50px;
+}
+
+.productos .list p {
+    font-size: 20px;
+}
+/* Termina Seccion de Productos */
+
+/* Defino Grid */
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-gap: 7px;
+    padding: 0 16px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: (12, auto);
+
+    grid-template-areas: "cafe      cafe      cafe      cafe      cafe        cafe        cafe        cafe"
+                         "expreso   expreso   expreso   expreso   late        late        late        late"
+                         "frappe    frappe    frappe    frappe    frappe      frappe      frappe      frappe"
+                         "oreo      oreo      oreo      oreo      clasico     clasico     clasico     clasico"
+                         "choco     choco     choco     choco     choco       choco       choco       choco"
+                         "clascho   clascho   clascho   clascho   bombones    bombones    bombones    bombones"
+                         "donas     donas     donas     donas     donas       donas       donas       donas"
+                         "glass     glass     glass     glass     azucarada   azucarada   azucarada   azucarada"
+                         "pasteles  pasteles  pasteles  pasteles  pasteles    pasteles    pasteles    pasteles"
+                         "dchoc     dchoc     dchoc     dchoc     tiramisu    tiramisu    tiramisu    tiramisu"
+                         "snacks    snacks    snacks    snacks    snacks      snacks      snacks      snacks"
+                         "sandwich  sandwich  sandwich  sandwich  banderillas banderillas banderillas banderillas";
+}
+
+/* Empieza Cafe */
+.contenedor .cafe {
+    grid-area: cafe;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .cafe h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+/* Expresso */
+.contenedor .expreso {
+    grid-area: expreso;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .expreso .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .expreso .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .expreso .img-expreso {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .expreso .img-expreso img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .expreso .img-expreso:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .expreso .inf-expreso {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .expreso .inf-expreso h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .expreso .inf-expreso p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .expreso .inf-expreso .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .expreso .inf-expreso .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .expreso .inf-expreso .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Late */
+.contenedor .late {
+    grid-area: late;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contenedor .late .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .late .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .late .img-late {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .late .img-late img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .late .img-late:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .late .inf-late {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .late .inf-late h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .late .inf-late p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .late .inf-late .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .late .inf-late .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .late .inf-late .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Termina Cafe */
+
+/* Empieza Frappe */
+.contenedor .frappe {
+    grid-area: frappe;
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .frappe h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+/* oreo */
+.contenedor .oreo {
+    grid-area: oreo;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .oreo .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .oreo .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .oreo .img-oreo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .oreo .img-oreo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .oreo .img-oreo:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .oreo .inf-oreo {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .oreo .inf-oreo h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .oreo .inf-oreo p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .oreo .inf-oreo .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .oreo .inf-oreo .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .oreo .inf-oreo .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Clásico */
+.contenedor .clasico {
+    grid-area: clasico;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contenedor .clasico .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .clasico .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .clasico .img-clasico {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .clasico .img-clasico img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .clasico .img-clasico:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .clasico .inf-clasico {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .clasico .inf-clasico h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .clasico .inf-clasico p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .clasico .inf-clasico .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .clasico .inf-clasico .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .clasico .inf-clasico .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+/* Termina Frappe */
+
+/* Empieza Chocolate */
+.contenedor .choco {
+    grid-area: choco;
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .choco h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+/* Clásico */
+.contenedor .clascho {
+    grid-area: clascho;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .clascho .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .clascho .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .clascho .img-clascho {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .clascho .img-clascho img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .clascho .img-clascho:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .clascho .inf-clascho {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .clascho .inf-clascho h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .clascho .inf-clascho p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .clascho .inf-clascho .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .clascho .inf-clascho .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .clascho .inf-clascho .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Bombones */
+.contenedor .bombones {
+    grid-area: bombones;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contenedor .bombones .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .bombones .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .bombones .img-bombones {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .bombones .img-bombones img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .bombones .img-bombones:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .bombones .inf-bombones {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .bombones .inf-bombones h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .bombones .inf-bombones p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .bombones .inf-bombones .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .bombones .inf-bombones .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .bombones .inf-bombones .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+/* Termina Chocolate */
+
+/* Empieza Donas */
+.contenedor .donas {
+    grid-area: donas;
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .donas h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+/* Glaseada */
+.contenedor .glass {
+    grid-area: glass;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .glass .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .glass .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .glass .img-glass {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .glass .img-glass img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .glass .img-glass:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .glass .inf-glass {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .glass .inf-glass h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .glass .inf-glass p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .glass .inf-glass .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .glass .inf-glass .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .glass .inf-glass .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Azucarada */
+.contenedor .azucarada {
+    grid-area: azucarada;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contenedor .azucarada .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .azucarada .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .azucarada .img-azucarada {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .azucarada .img-azucarada img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .azucarada .img-azucarada:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .azucarada .inf-azucarada {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .azucarada .inf-azucarada h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .azucarada .inf-azucarada p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .azucarada .inf-azucarada .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .azucarada .inf-azucarada .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .azucarada .inf-azucarada .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+/* Termina Donas */
+
+/* Empieza Pastel */
+.contenedor .pasteles {
+    grid-area: pasteles;
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .pasteles h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+/* De Chocolate */
+.contenedor .dchoc {
+    grid-area: dchoc;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .dchoc .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .dchoc .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .dchoc .img-dchoc {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .dchoc .img-dchoc img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .dchoc .img-dchoc:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .dchoc .inf-dchoc {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .dchoc .inf-dchoc h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .dchoc .inf-dchoc p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .dchoc .inf-dchoc .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .dchoc .inf-dchoc .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .dchoc .inf-dchoc .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Tiramisu */
+.contenedor .tiramisu {
+    grid-area: tiramisu;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.contenedor .tiramisu .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .tiramisu .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .tiramisu .img-tiramisu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .tiramisu .img-tiramisu img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .tiramisu .img-tiramisu:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .tiramisu .inf-tiramisu {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .tiramisu .inf-tiramisu h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .tiramisu .inf-tiramisu p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+/* Termina Pastel */
+
+/* Empieza Snacks */
+.contenedor .snacks {
+    grid-area: snacks;
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .snacks h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+/* Sandwich */
+.contenedor .sandwich {
+    grid-area: sandwich;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .sandwich .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .sandwich .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .sandwich .img-sandwich {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .sandwich .img-sandwich img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .sandwich .img-sandwich:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .sandwich .inf-sandwich {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .sandwich .inf-sandwich h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .sandwich .inf-sandwich p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .sandwich .inf-sandwich .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .sandwich .inf-sandwich .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .sandwich .inf-sandwich .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Banderillas */
+.contenedor .banderillas {
+    grid-area: banderillas;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.contenedor .banderillas .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .banderillas .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .banderillas .img-banderillas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .banderillas .img-banderillas img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .banderillas .img-banderillas:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .banderillas .inf-banderillas {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .banderillas .inf-banderillas h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .banderillas .inf-banderillas p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .banderillas .inf-banderillas .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .banderillas .inf-banderillas .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .banderillas .inf-banderillas .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+/* Termina Pastel */
+
+
+@media (max-width:991px) {
+
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+    
+        grid-template-areas: "cafe      cafe      cafe      cafe"
+                             "expreso   expreso   expreso   expreso"
+                             "late      late      late      late"
+                             "frappe    frappe    frappe    frappe"
+                             "oreo      oreo      oreo      oreo"      
+                             "clasico   clasico   clasico   clasico"
+                             "choco     choco     choco     choco"
+                             "clascho   clascho   clascho   clascho"   
+                             "bombones  bombones  bombones  bombones"
+                             "donas     donas     donas     donas"
+                             "glass     glass     glass     glass"     
+                             "azucarada azucarada azucarada azucarada"
+                             "pasteles  pasteles  pasteles  pasteles"
+                             "dchoc     dchoc     dchoc     dchoc"     
+                             "tiramisu  tiramisu  tiramisu  tiramisu"
+                             "snacks    snacks    snacks    snacks"
+                             "sandwich  sandwich  sandwich  sandwich"  
+                             "banderillas banderillas banderillas banderillas";
+    }
+    
+    header {
+        height: 90px;
+    }
+
+    header .logo {
+        left: 16px;
+        top: 5px;
+    }
+
+    header .banner {
+        opacity: 0;
+    }
+
+    header .logo img {
+        width: 95px;
+        height: 80px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.active ul {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 90px);
+        background-image: url(img-prod/fondo-galletas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    nav ul li a {
+        font-size: 2em;
+        margin-bottom: 15px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    header .toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        cursor: pointer;
+        background: #fff url(img-prod/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header .toggle.active {
+        background: #fff url(img-prod/close.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Productos Responsive */
+    .productos {
+        height: 55px;
+        padding-bottom: 7px;
+    }
+
+    .productos .list img {
+        width: 30px;
+    }
+
+    .productos .list p {
+        font-size: 10px;
+    }
+
+    /* Empieza Cafe */
+    .contenedor .cafe {
+        height: 60px;
+    }
+
+    .contenedor .cafe h2 {
+        font-size: 50px;
+    }
+
+    .contenedor .expreso .inf-expreso h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .expreso .inf-expreso p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .expreso .inf-expreso .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .expreso .inf-expreso .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }    
+
+    .contenedor .late .inf-late h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .late .inf-late p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .late .inf-late .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .late .inf-late .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    /* Empieza Frappe */
+    .contenedor .frappe {
+        height: 60px;
+    }
+
+    .contenedor .frappe h2 {
+        font-size: 50px;
+    }
+
+    .contenedor .oreo .inf-oreo h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .oreo .inf-oreo p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .oreo .inf-oreo .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .oreo .inf-oreo .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    .contenedor .clasico .inf-clasico h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .clasico .inf-clasico p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .clasico .inf-clasico .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .clasico .inf-clasico .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    /* Empieza Chocolate */
+    .contenedor .choco {
+        height: 60px;
+    }
+
+    .contenedor .choco h2 {
+        font-size: 50px;
+    }
+
+    .contenedor .clascho .inf-clascho h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .clascho .inf-clascho p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .clascho .inf-clascho .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .clascho .inf-clascho .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    .contenedor .bombones .inf-bombones h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .bombones .inf-bombones p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .bombones .inf-bombones .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .bombones .inf-bombones .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    /* Empieza Donas */
+    .contenedor .donas {
+        height: 60px;
+    }
+
+    .contenedor .donas h2 {
+        font-size: 50px;
+    }
+
+    .contenedor .glass .inf-glass h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .glass .inf-glass p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .glass .inf-glass .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .glass .inf-glass .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    .contenedor .azucarada .inf-azucarada h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .azucarada .inf-azucarada p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .acucarada .inf-acucarada .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .acucarada .inf-acucarada .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    /* Empieza Pasteles */
+    .contenedor .pasteles {
+        height: 60px;
+    }
+
+    .contenedor .pasteles h2 {
+        font-size: 50px;
+    }
+
+    .contenedor .dchoc .inf-dchoc h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .dchoc .inf-dchoc p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .dchoc .inf-dchoc .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .dchoc .inf-dchoc .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    .contenedor .tiramisu .inf-tiramisu h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .tiramisu .inf-tiramisu p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .tiramisu .inf-tiramisu .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .tiramisu .inf-tiramisu .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    /* Empieza Snacks */
+    .contenedor .snacks {
+        height: 60px;
+    }
+
+    .contenedor .snacks h2 {
+        font-size: 50px;
+    }
+
+    .contenedor .sandwich .inf-sandwich h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .sandwich .inf-sandwich p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .sandwich .inf-sandwich .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .sandwich .inf-sandwich .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+
+    .contenedor .banderillas .inf-banderillas h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .banderillas .inf-banderillas p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .banderillas .inf-banderillas .botones .boton1 {
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+    .contenedor .banderillas .inf-banderillas .botones .boton2 {
+        padding: 7px;
+        font-size: 12px;
+    }   
+}

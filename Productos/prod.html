@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquey -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/906c5a8b2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylprod.css">
+	<title>Coffe Place</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="img-prod/fondo.jpg" alt="ImgLogo" class="banner">
+        <a href="#" class="logo"><img src="img-prod/Logo.jpg" alt="Logo"></a>
+        <div class="toggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="../Pagina Principal/principal.html">Home</a></li>
+                <li><a href="#">Mi Cuenta</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="../Promos/promo.html">Promociones</a></li>
+                <li><a href="#">Favoritos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="productos">
+        <div class="list active" data-filter="all"><img src="img-prod/icon-all.png" alt="Todos"><p>Todos</p></div>
+        <div class="list" data-filter="cafes"><img src="img-prod/icon-cafe.png" alt="Café"><p>Café</p></div>
+        <div class="list" data-filter="frappes"><img src="img-prod/icon-frappe.png" alt="Frappe"><p>Frappe</p></div>
+        <div class="list" data-filter="chocos"><img src="img-prod/icon-choco.png" alt="Chocolate"><p>Chocolate</p></div>
+        <div class="list" data-filter="dona"><img src="img-prod/icon-dona.png" alt="Donas"><p>Donas</p></div>
+        <div class="list" data-filter="pastel"><img src="img-prod/icon-pastel.png" alt="Pastel"><p>Pasteles</p></div>
+        <div class="list" data-filter="snack"><img src="img-prod/icon-snack.png" alt="Snacks"><p>Snacks</p></div>
+    </section>
+
+    <div class="contenedor">
+
+    <!-- Café -->
+        <section class="cafe itemBox cafes">
+            <h2>Cafés</h2>
+        </section>
+
+        <!-- Expresso -->
+        <section class="expreso itemBox cafes">
+
+            <div class="pesos"><p>$50</p></div>
+
+            <div class="img-expreso">
+                <img src="img-prod/expresso.jpg" alt="Expresso">
+            </div>
+
+            <div class="inf-expreso">
+                <h2>Café Expresso</h2>
+                <p>El espresso es un tipo de café originario de Italia y que debe su nombre a la cafetera con la que se prepara (cafetera espresso).</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Late -->
+        <section class="late itemBox cafes">
+
+            <div class="pesos"><p>$60</p></div>
+
+            <div class="img-late">
+                <img src="img-prod/late.jpg" alt="Late">
+            </div>
+
+            <div class="inf-late">
+                <h2>Café Latte</h2>
+                <p>Caffe latte es una bebida de café hecha con espresso y leche al vapor.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Frappe -->
+        <section class="frappe itemBox frappes">
+            <h2>Frappes</h2>
+        </section>
+
+        <!-- Oreo -->
+        <section class="oreo itemBox frappes">
+
+            <div class="pesos"><p>$45</p></div>
+
+            <div class="img-oreo">
+                <img src="img-prod/oreo.jpg" alt="Oreo">
+            </div>
+
+            <div class="inf-oreo">
+                <h2>Frappe Oreo</h2>
+                <p>Delicia dulce y refrescante hecha con mocha, un toque de café, cubierta a mano con crema batida y trocitos de galleta Oreo.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clásico -->
+        <section class="clasico itemBox frappes">
+
+            <div class="pesos"><p>$40</p></div>
+
+            <div class="img-clasico">
+                <img src="img-prod/clasico.jpg" alt="Clásico">
+            </div>
+
+            <div class="inf-clasico">
+                <h2>Frappe de café</h2>
+                <p> Es un café con hielo cubierto de espuma elaborado a partir de café instantáneo.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Chocolate -->
+        <section class="choco itemBox chocos">
+            <h2>Chocolate</h2>
+        </section>
+
+        <!-- Clásico -->
+        <section class="clascho itemBox chocos">
+
+            <div class="pesos"><p>$35</p></div>
+
+            <div class="img-clascho">
+                <img src="img-prod/clascho.jpg" alt="Chocolate">
+            </div>
+
+            <div class="inf-clascho">
+                <h2>Chocolate Caliente</h2>
+                <p>Una preparación que se hace a partir de chocolate o cacao en polvo disuelta en agua o leche, a la que se le agrega azúcar, harina y especias dulces.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonbones -->
+        <section class="bombones itemBox chocos">
+
+            <div class="pesos"><p>$47</p></div>
+
+            <div class="img-bombones">
+                <img src="img-prod/bombones.jpg" alt="Bombones">
+            </div>
+
+            <div class="inf-bombones">
+                <h2>Chocolate con Bombones</h2>
+                <p>Entra en calor esta temporada con una deliciosa taza de este chocolate caliente con bobmbones. </p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Donas -->
+        <section class="donas itemBox dona">
+            <h2>Donas</h2>
+        </section>
+    
+        <!-- Glaseada -->
+        <section class="glass itemBox dona">
+
+            <div class="pesos"><p>$18</p></div>
+
+            <div class="img-glass">
+                <img src="img-prod/dona-01.jpg" alt="Glaseada">
+            </div>
+    
+            <div class="inf-glass">
+                <h2>Dona Glaseada</h2>
+                <p>Las donas glaseadas son una verdadera tentación a la que dificilmente podríamos resistirnos.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Azucarada -->
+        <section class="azucarada itemBox dona">
+
+            <div class="pesos"><p>$16</p></div>
+
+            <div class="img-azucarada">
+                <img src="img-prod/asucarada.png" alt="Azucarada">
+            </div>
+    
+            <div class="inf-azucarada">
+                <h2>Dona Azucarada</h2>
+                <p>Deliciosa dona cubierta con azucar. Creamos las Donas mas irresistibles con la combinación perfecta de ingredientes.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Pasteles -->
+        <section class="pasteles itemBox pastel">
+            <h2>Pasteles</h2>
+        </section>
+
+        <!-- De Chocolate -->
+        <section class="dchoc itemBox pastel">
+
+            <div class="pesos"><p>$38</p></div>
+
+            <div class="img-dchoc">
+                <img src="img-prod/dchoc.jpg" alt="De Chocolate">
+            </div>
+    
+            <div class="inf-dchoc">
+                <h2>Pastel de Chocolate</h2>
+                <p>Tarta de chocolate o torta de chocolate ideal para cumpleaños o solo por el antojo.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito <i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tiramisu -->
+        <section class="tiramisu itemBox pastel">
+
+            <div class="pesos"><p>$50</p></div>
+
+            <div class="img-tiramisu">
+                <img src="img-prod/tiramisu.jpg" alt="Tiramisu">
+            </div>
+    
+            <div class="inf-tiramisu">
+                <h2>Pastel Tiramisu</h2>
+                <p>Con un suave bizcocho de café, acompañado de una tersa crema de queso mascarpone, y una crocante soleta en el interior, remojada con café.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Snacks -->
+        <section class="snacks itemBox snack">
+            <h2>Snacks</h2>
+        </section>
+
+        <!-- Sandwich -->
+        <section class="sandwich itemBox snack">
+            
+            <div class="pesos"><p>$35</p></div>
+
+            <div class="img-sandwich">
+                <img src="img-prod/sandwich.jpg" alt="Sandwich">
+            </div>
+    
+            <div class="inf-sandwich">
+                <h2>Sandwich</h2>
+                <p>Emparedado hecho con dos rebanadas de pan de molde entre las que se coloca jamón , queso , embutido , vegetales u otros alimentos.</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banderillas -->
+        <section class="banderillas itemBox snack">
+
+            <div class="pesos"><p>$12</p></div>
+
+            <div class="img-banderillas">
+                <img src="img-prod/banderillas.jpg" alt="Banderillas">
+            </div>
+    
+            <div class="inf-banderillas">
+                <h2>Banderillas</h2>
+                <p>Las banderillas son una tapa servida en algunos bares españoles que consiste en unos encurtidos insertados en un palillo como en una brocheta</p>
+                <div class="botones">
+                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton2">Favorito<i class="far fa-star"></i></button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        //Para nav
+        const nav = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function() {
+            this.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        //Para Navegacion Bottom
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itemBox').show('1000');
+                }
+                else {
+                    $('.itemBox').not('.'+value).hide('1000');
+                    $('.itemBox').filter('.'+value).show('1000');
+                }
+            })
+        })
+
+        $('.list').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    </script>
+
+</body>
+</html>
