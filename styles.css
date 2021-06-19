@@ -83,9 +83,9 @@ form input:active {
 
 form input[type="submit"] {
     cursor: pointer;
-    border: solid 2px red;
+    border: solid 2px chocolate;
     width: 100%;
-    color: red;
+    color: chocolate;
 }
 
 form input[type="submit"]:active {

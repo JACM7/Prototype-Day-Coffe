@@ -108,6 +108,11 @@ nav ul li {
     list-style: none;
 }
 
+nav ul li.activado {
+    border-top: 3px solid #DBA37D;
+    border-bottom: 3px solid #DBA37D;
+}
+
 nav ul li a {
     color: #fff;
     display: inline-block;
@@ -858,7 +863,8 @@ nav ul li a:hover {
 
     nav ul li a {
         font-size: 2em;
-        margin-bottom: 15px;
+        margin-top: 7px;
+        margin-bottom: 7px;
         color: #000;
         font-weight: 900;
     }
