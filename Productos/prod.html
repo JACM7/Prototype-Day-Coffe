@@ -34,7 +34,7 @@
     <!-- Carrito -->
     <section class="carrito">
         <div class="share">
-            <a class="togle"><span>Carrito</span></a>
+            <a class="togle"><span>Carrito<i class="fas fa-shopping-cart"></i></span></a>
             <button type="button" class="cerrar">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -47,10 +47,17 @@
                                 <th>Producto</th>
                                 <th>Precio</th>
                                 <th>Cantidad</th>
-                                <th>Elimina</th>
+                                <th></th>
                             </tr>
-                        </thead>
+                        </thead> 
+                        <tbody class="tablaCuerpo">
+
+                        </tbody>
                     </table>
+                    <div class="termina">
+                        <p class="total">Total: $<span class="totpre">0</span></p>
+                        <button class="botonCompara">Comprar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,7 +84,7 @@
         <!-- Expresso -->
         <section class="expreso itemBox cafes">
 
-            <div class="pesos"><p>$50</p></div>
+            <div class="pesos"><p class="precio">$50</p></div>
 
             <div class="img-expreso">
                 <img class="item-img" src="img-prod/expresso.jpg" alt="Expresso">
@@ -87,7 +94,7 @@
                 <h2 class="item-text">Café Expresso</h2>
                 <p>El espresso es un tipo de café originario de Italia y que debe su nombre a la cafetera con la que se prepara (cafetera espresso).</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -106,7 +113,7 @@
                 <h2 class="item-text">Café Latte</h2>
                 <p>Caffe latte es una bebida de café hecha con espresso y leche al vapor.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -130,7 +137,7 @@
                 <h2 class="item-text">Frappe Oreo</h2>
                 <p>Delicia dulce y refrescante hecha con mocha, un toque de café, cubierta a mano con crema batida y trocitos de galleta Oreo.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -149,7 +156,7 @@
                 <h2 class="item-text">Frappe de café</h2>
                 <p> Es un café con hielo cubierto de espuma elaborado a partir de café instantáneo.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -173,7 +180,7 @@
                 <h2 class="item-text">Chocolate Caliente</h2>
                 <p>Una preparación que se hace a partir de chocolate o cacao en polvo disuelta en agua o leche, a la que se le agrega azúcar, harina y especias dulces.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -192,7 +199,7 @@
                 <h2 class="item-text">Con Bombones</h2>
                 <p>Entra en calor esta temporada con una deliciosa taza de este chocolate caliente con bobmbones. </p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -216,7 +223,7 @@
                 <h2 class="item-text">Dona Glaseada</h2>
                 <p>Las donas glaseadas son una verdadera tentación a la que dificilmente podríamos resistirnos.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -235,7 +242,7 @@
                 <h2 class="item-text">Dona Azucarada</h2>
                 <p>Deliciosa dona cubierta con azucar. Creamos las Donas mas irresistibles con la combinación perfecta de ingredientes.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -259,7 +266,7 @@
                 <h2 class="item-text">De Chocolate</h2>
                 <p>Tarta de chocolate o torta de chocolate ideal para cumpleaños o solo por el antojo.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito <i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -278,7 +285,7 @@
                 <h2 class="item-text">Pastel Tiramisu</h2>
                 <p>Con un suave bizcocho de café, acompañado de una tersa crema de queso mascarpone, y una crocante soleta en el interior, remojada con café.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -302,7 +309,7 @@
                 <h2 class="item-text">Sandwich</h2>
                 <p>Emparedado hecho con dos rebanadas de pan de molde entre las que se coloca jamón , queso , embutido , vegetales u otros alimentos.</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
@@ -321,16 +328,13 @@
                 <h2 class="item-text">Banderillas</h2>
                 <p>Las banderillas son una tapa servida en algunos bares españoles que consiste en unos encurtidos insertados en un palillo como en una brocheta</p>
                 <div class="botones">
-                    <button class="boton1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    <button class="boton1">Agregar <i class="fas fa-shopping-cart"></i></button>
                     <button class="boton2">Favorito<i class="far fa-star"></i></button>
                 </div>
             </div>
         </section>
 
     </div>
-
-    <script src="./paracarrito.js" type="module"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
     <script>
         //Para nav
@@ -369,6 +373,9 @@
             $('.share').toggleClass('active');
         });
     </script>
+
+    <script src="./paracarrito.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 </body>
 </html>

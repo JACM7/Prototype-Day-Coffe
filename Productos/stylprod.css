@@ -90,8 +90,9 @@ nav ul li a:hover {
 .carrito, .carrito::before, .carrito::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: 5px;
-    position: fixed;
+    margin-top: 7px;
+    position: sticky;
+    top: 10px;
     z-index: 20;
     margin-left: 10px;
 }
@@ -119,6 +120,54 @@ nav ul li a:hover {
 .carrito td {
     color: #fff;
     text-align: left;
+}
+
+.carrito .input {
+    width: 35px;
+    height: 20px;
+    padding-left: 3px;
+}
+
+.carrito .elimina {
+    width: 40px;
+}
+
+.carrito .elimina button {
+    padding: 5px;
+    background-color: #000;
+    color: red;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.carrito p {
+    font-size: 25px;
+}
+
+.carrito .termina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #804000;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.carrito .termina .total {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.carrito .termina button {
+    padding: 5px;
+    background-color: #000;
+    color: green;
+    border: solid 2px green;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .carrito .cerrar {
@@ -212,7 +261,7 @@ nav ul li a:hover {
 
 .carrito .share.active .togle span {
     transform: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-    transform: translateX(-128px);
+    transform: translateX(-130px);
 }
 
 .carrito .share span {
