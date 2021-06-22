@@ -84,6 +84,25 @@ function cantidadMod(event) {
 
 //Comprar
 function comprarClick() {
-    contenedor.innerHTML = '';
-    precioTotal();
+        Swal.fire({
+            title: '¿Estás Seguro?',
+            text: "Puede que olvides algo.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#2CAB1C',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Comprar Ahora'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: 'Gracias por tu Compra!!!',
+                    text: "Tu pedido llegara pronto.",
+                    icon: 'success',
+                    showConfirmButton: false,
+                    timer: 3000
+                });
+            contenedor.innerHTML = '';
+            precioTotal();
+            }
+        })
 }
