@@ -15,7 +15,7 @@ body {
     background-color: #804000;
 }
 
-/*Seccion de header*/
+/* ---------- Seccion de header ---------- */
 header {
     position: relative;
     top: 0;
@@ -46,9 +46,9 @@ header .logo img {
     height: 85px;
     border-radius: 50%;
 }
-/* Termina header */
+/* ---------- Termina header ---------- */
 
-/* Empieza Barra de Navegacion */
+/* ---------- Empieza Barra de Navegacion ---------- */
 nav {
     position: relative;
     height: 100%;
@@ -84,9 +84,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #DBA37D;
 }
-/* Termina Barra de Navegacion */
+/* ---------- Termina Barra de Navegacion ---------- */
 
-/* Carrito */
+/* ---------- Carrito ---------- */
 .carrito, .carrito::before, .carrito::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -295,9 +295,9 @@ nav ul li a:hover {
     opacity: 0;
     transform: translateY(20px);
 }
-/* Termina Carrito */
+/* ---------- Termina Carrito ---------- */
 
-/* Empieza Seccion de Productos */
+/* ---------- Empieza Seccion de Productos ---------- */
 .productos {
     position: fixed;
     bottom: 0;
@@ -329,9 +329,9 @@ nav ul li a:hover {
 .productos .list p {
     font-size: 20px;
 }
-/* Termina Seccion de Productos */
+/* ---------- Termina Seccion de Productos ---------- */
 
-/* Defino Grid */
+/* ---------- Defino Grid ---------- */
 .contenedor {
     width: 100%;
     display: grid;
@@ -354,7 +354,7 @@ nav ul li a:hover {
                          "sandwich  sandwich  sandwich  sandwich  banderillas banderillas banderillas banderillas";
 }
 
-/* Empieza Cafe */
+/* ---------- Empieza Cafe ---------- */
 .contenedor .cafe {
     grid-area: cafe;
     width: 100%;
@@ -371,7 +371,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Expresso */
+/* ---------- Expresso ---------- */
 .contenedor .expreso {
     grid-area: expreso;
     width: 100%;
@@ -473,7 +473,13 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Late */
+.contenedor .expreso .inf-expreso .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #FAF54F;
+}
+
+/* ---------- Late ---------- */
 .contenedor .late {
     grid-area: late;
     width: 100%;
@@ -576,9 +582,14 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Termina Cafe */
+.contenedor .late .inf-late .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+/* ---------- Termina Cafe ---------- */
 
-/* Empieza Frappe */
+/* ---------- Empieza Frappe ---------- */
 .contenedor .frappe {
     grid-area: frappe;
     width: 100%;
@@ -595,7 +606,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* oreo */
+/* ---------- oreo ---------- */
 .contenedor .oreo {
     grid-area: oreo;
     width: 100%;
@@ -697,7 +708,7 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Clásico */
+/* ---------- Clásico ---------- */
 .contenedor .clasico {
     grid-area: clasico;
     width: 100%;
@@ -799,9 +810,9 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
-/* Termina Frappe */
+/* ---------- Termina Frappe ---------- */
 
-/* Empieza Chocolate */
+/* ---------- Empieza Chocolate ---------- */
 .contenedor .choco {
     grid-area: choco;
     width: 100%;
@@ -818,7 +829,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Clásico */
+/* ---------- Clásico ---------- */
 .contenedor .clascho {
     grid-area: clascho;
     width: 100%;
@@ -920,7 +931,7 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Bombones */
+/* ---------- Bombones ---------- */
 .contenedor .bombones {
     grid-area: bombones;
     width: 100%;
@@ -1022,9 +1033,9 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
-/* Termina Chocolate */
+/* ---------- Termina Chocolate ---------- */
 
-/* Empieza Donas */
+/* ---------- Empieza Donas ---------- */
 .contenedor .donas {
     grid-area: donas;
     width: 100%;
@@ -1041,7 +1052,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Glaseada */
+/* ---------- Glaseada ---------- */
 .contenedor .glass {
     grid-area: glass;
     width: 100%;
@@ -1143,7 +1154,7 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Azucarada */
+/* ---------- Azucarada ---------- */
 .contenedor .azucarada {
     grid-area: azucarada;
     width: 100%;
@@ -1245,9 +1256,9 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
-/* Termina Donas */
+/* ---------- Termina Donas ---------- */
 
-/* Empieza Pastel */
+/* ---------- Empieza Pastel ---------- */
 .contenedor .pasteles {
     grid-area: pasteles;
     width: 100%;
@@ -1264,7 +1275,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* De Chocolate */
+/* ---------- De Chocolate ---------- */
 .contenedor .dchoc {
     grid-area: dchoc;
     width: 100%;
@@ -1366,8 +1377,8 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Tiramisu */
-.contenedor .tiramisu {
+/* ---------- Tiramisu ---------- */
+.contenedor .tiramisu { 
     grid-area: tiramisu;
     width: 100%;
     height: 300px;
@@ -1468,9 +1479,9 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
-/* Termina Pastel */
+/* ---------- Termina Pastel ---------- */
 
-/* Empieza Snacks */
+/* ---------- Empieza Snacks ---------- */
 .contenedor .snacks {
     grid-area: snacks;
     width: 100%;
@@ -1487,7 +1498,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Sandwich */
+/* ---------- Sandwich ---------- */
 .contenedor .sandwich {
     grid-area: sandwich;
     width: 100%;
@@ -1589,7 +1600,7 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Banderillas */
+/* ---------- Banderillas ---------- */
 .contenedor .banderillas {
     grid-area: banderillas;
     width: 100%;
@@ -1691,9 +1702,9 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
-/* Termina Pastel */
+/* ---------- Termina Pastel ---------- */
 
-
+/* ---------- Responsive ---------- */
 @media (max-width:991px) {
 
     .contenedor {
@@ -1786,7 +1797,7 @@ nav ul li a:hover {
         background-position: center;
     }
 
-    /* Para Carrito */
+    /* ---------- Para Carrito ---------- */
     .carrito .share.active {
         width: 350px;
     }
@@ -1799,7 +1810,7 @@ nav ul li a:hover {
         transform: translateX(-120px);
     }
 
-    /* Productos Responsive */
+    /* ---------- Productos Responsive ---------- */
     .productos {
         height: 55px;
         padding-bottom: 7px;
@@ -1813,7 +1824,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
 
-    /* Empieza Cafe */
+    /* ---------- Empieza Cafe ---------- */
     .contenedor .cafe {
         height: 60px;
     }
@@ -1860,7 +1871,7 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
-    /* Empieza Frappe */
+    /* ---------- Empieza Frappe ---------- */
     .contenedor .frappe {
         height: 60px;
     }
@@ -1907,7 +1918,7 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
-    /* Empieza Chocolate */
+    /* ---------- Empieza Chocolate ---------- */
     .contenedor .choco {
         height: 60px;
     }
@@ -1954,7 +1965,7 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
-    /* Empieza Donas */
+    /* ---------- Empieza Donas ---------- */
     .contenedor .donas {
         height: 60px;
     }
@@ -2001,7 +2012,7 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
-    /* Empieza Pasteles */
+    /* ---------- Empieza Pasteles ---------- */
     .contenedor .pasteles {
         height: 60px;
     }
@@ -2048,7 +2059,7 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
-    /* Empieza Snacks */
+    /* ---------- Empieza Snacks ---------- */
     .contenedor .snacks {
         height: 60px;
     }
@@ -2098,8 +2109,8 @@ nav ul li a:hover {
 
 
 
-@media (max-width:330px) {
-    /* Para Carrito */
+@media (max-width:330px) { 
+    /* ---------- Para Carrito ---------- */
     .carrito .share.active {
         width: 300px;
     }

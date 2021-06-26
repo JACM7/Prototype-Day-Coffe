@@ -16,7 +16,7 @@ body {
     background-color: #804000;
 }
 
-/*Seccion de header*/
+/* ---------- Seccion de header ---------- */
 header {
     position: relative;
     top: 0;
@@ -47,9 +47,9 @@ header .logo img {
     height: 85px;
     border-radius: 50%;
 }
-/* Termina header */
+/* ---------- Termina header ---------- */
 
-/* Empieza Barra de Navegacion */
+/* ---------- Empieza Barra de Navegacion ---------- */
 nav {
     position: relative;
     height: 100%;
@@ -85,7 +85,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #DBA37D;
 }
-/* Termina Barra de Navegacion */
+/* ---------- Termina Barra de Navegacion ---------- */
 
 .contenedor {
     width: 100%;
@@ -104,7 +104,7 @@ nav ul li a:hover {
                          "aviso       aviso       aviso       aviso       cerrar      cerrar      cerrar      cerrar";
 }
 
-/* Seccion Mi Perfil */
+/* ---------- Seccion Mi Perfil ---------- */
 .contenedor .mi {
     grid-area: mi;
     width: 100%;
@@ -123,7 +123,7 @@ nav ul li a:hover {
     color: #fff; 
 }
 
-/* Seccion de Usuario */
+/* ---------- Seccion de Usuario ---------- */
 .contenedor .usuario {
     grid-area: usuario;
     width: 100%;
@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 
 
-/* Seccion de mis Tergetas */
+/* ---------- Seccion de mis Tergetas ---------- */
 .contenedor .targetas {
     grid-area: targetas;
     width: 100%;
@@ -192,7 +192,7 @@ nav ul li a:hover {
     color: #000;
 }
 
-/* Seccion de Direcciones */
+/* ---------- Seccion de Direcciones ---------- */
 .contenedor .direcciones {
     grid-area: direcciones;
     width: 100%;
@@ -230,7 +230,7 @@ nav ul li a:hover {
     color: #000;
 }
 
-/* Seccion de Informacion */
+/* ---------- Seccion de Informacion ---------- */
 .contenedor .informacion {
     grid-area: informacion;
     width: 100%;
@@ -246,7 +246,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Seccion de Preguntas */
+/* ---------- Seccion de Preguntas ---------- */
 .contenedor .preguntas {
     grid-area: preguntas;
     width: 100%;
@@ -285,7 +285,7 @@ nav ul li a:hover {
 }
 
 
-/* Seccion de terminos y condiciones */
+/* ---------- Seccion de terminos y condiciones ---------- */
 .contenedor .tyc {
     grid-area: tyc;
     width: 100%;
@@ -324,7 +324,7 @@ nav ul li a:hover {
 }
 
 
-/* Seccion de aviso de privacidad */
+/* ---------- Seccion de aviso de privacidad ---------- */
 .contenedor .aviso {
     grid-area: aviso;
     width: 100%;
@@ -362,7 +362,7 @@ nav ul li a:hover {
     color: #000;
 }
 
-/* Seccion de cerrar secion */
+/* ---------- Seccion de cerrar secion ---------- */
 .contenedor .cerrar {
     grid-area: cerrar;
     width: 100%;
@@ -401,7 +401,7 @@ nav ul li a:hover {
 }
 
 
-/* Responsive */
+/* ---------- Responsive ---------- */
 @media (max-width:991px) {
     
     header {
@@ -486,7 +486,7 @@ nav ul li a:hover {
                              "cerrar      cerrar      cerrar      cerrar";
     }
 
-    /* Seccion Mi Perfil */
+    /* ---------- Seccion Mi Perfil ---------- */
     .contenedor .mi {
         height: 80px;
     }
@@ -495,7 +495,7 @@ nav ul li a:hover {
         font-size: 50px;
     }
 
-    /* Seccion de Usuario */
+    /* ---------- Seccion de Usuario ---------- */
     .contenedor .usuario {
         height: 200px;
     }
@@ -508,7 +508,7 @@ nav ul li a:hover {
         font-size: 30px;
     }
 
-    /* Seccion de mis Tergetas */
+    /* ---------- Seccion de mis Tergetas ---------- */
     .contenedor .targetas {
         height: 70px;
     }
@@ -517,7 +517,7 @@ nav ul li a:hover {
         font-size: 25px;
     }
 
-    /* Seccion de Direcciones */
+    /* ---------- Seccion de Direcciones ---------- */
     .contenedor .direcciones {
         height: 70px;
     }
@@ -526,7 +526,7 @@ nav ul li a:hover {
         font-size: 25px;
     }
 
-    /* Seccion de Informacion */
+    /* ---------- Seccion de Informacion ---------- */
     .contenedor .informacion {
         height: 70px;
     }
@@ -535,7 +535,7 @@ nav ul li a:hover {
         font-size: 40px;
     }
 
-    /* Seccion de Preguntas */
+    /* ---------- Seccion de Preguntas ---------- */
     .contenedor .preguntas {
         height: 70px;
     }
@@ -544,7 +544,7 @@ nav ul li a:hover {
         font-size: 25px;
     }
 
-    /* Seccion de terminos y condiciones */
+    /* ---------- Seccion de terminos y condiciones ---------- */
     .contenedor .tyc {
         height: 70px;
     }
@@ -553,7 +553,7 @@ nav ul li a:hover {
         font-size: 25px;
     }
 
-    /* Seccion de aviso de privacidad */
+    /* ---------- Seccion de aviso de privacidad ---------- */
     .contenedor .aviso {
         height: 70px;
     }
@@ -562,7 +562,7 @@ nav ul li a:hover {
         font-size: 25px;
     }
 
-    /* Seccion de cerrar secion */
+    /* ---------- Seccion de cerrar secion ---------- */
     .contenedor .cerrar {
         height: 70px;
     }

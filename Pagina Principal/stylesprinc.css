@@ -16,7 +16,7 @@ body {
     background-color: #804000;
 }
 
-/*Seccion de header*/
+/* ---------- Seccion de header ---------- */
 header {
     font-family: 'Quicksand', sans-serif;
     position: fixed;
@@ -78,9 +78,9 @@ header.sticky .logo img {
     height: 85px;
     border-radius: 50%;
 }
-/* Termina header */
+/* ---------- Termina header ---------- */
 
-/* Empieza Barra de Navegacion */
+/* ---------- Empieza Barra de Navegacion ---------- */
 nav {
     font-family: 'Quicksand', sans-serif;
     position: relative;
@@ -125,9 +125,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #DBA37D;
 }
-/* Termina Barra de Navegacion */
+/* ---------- Termina Barra de Navegacion ---------- */
 
-/* Empieza Scroll Arriba */
+/* ---------- Empieza Scroll Arriba ---------- */
 .scrolltop {
 	display: flex;
 	justify-content: center;
@@ -145,7 +145,7 @@ nav ul li a:hover {
     border: 3px solid #804000;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	cursor: pointer;
-	z-index: 1000;
+	z-index: 100;
 	visibility: hidden;
 	opacity: 0;
 	transition: 0.5s;
@@ -157,9 +157,9 @@ nav ul li a:hover {
 	visibility: visible;
 	opacity: 1;
 }
-/* Termina Scroll Arriba */
+/* ---------- Termina Scroll Arriba ---------- */
 
-/* Defino Grid */
+/* ---------- Defino Grid ---------- */
 .contenedor {
     width: 100%;
     display: grid;
@@ -181,7 +181,7 @@ nav ul li a:hover {
                          "footer     footer     footer     footer     footer     footer     footer     footer";
 }
 
-/* Estilos de Carrusel */
+/* ---------- Estilos de Carrusel ---------- */
 .contenedor .carrusel {
     grid-area: carrusel;
     font-family: 'Quicksand', sans-serif;
@@ -238,9 +238,9 @@ nav ul li a:hover {
     color: #fff;
     text-decoration: none;
 }
-/* Termina Estilos de Carrusel */
+/* ---------- Termina Estilos de Carrusel ---------- */
 
-/* Empieza Titulo */
+/* ---------- Empieza Titulo ---------- */
 .contenedor .titulo {
     grid-area: titulo;
     font-family: 'Quicksand', sans-serif;
@@ -256,9 +256,9 @@ nav ul li a:hover {
     color: #fff;
     font-size: 70px;
 }
-/* Termina Titulo */
+/* ---------- Termina Titulo ---------- */
 
-/* Empieza Frase */
+/* ---------- Empieza Frase ---------- */
 .contenedor .frase {
     grid-area: frase;
     font-family: 'Quicksand', sans-serif;
@@ -281,9 +281,9 @@ nav ul li a:hover {
 .contenedor .frase p span {
     float: right;
 }
-/* Termina Frase */
+/* ---------- Termina Frase ---------- */
 
-/* Comencemos */
+/* ---------- Comencemos ---------- */
 .contenedor .comencemos {
     grid-area: comencemos;
     font-family: 'Quicksand', sans-serif;
@@ -301,9 +301,9 @@ nav ul li a:hover {
     color: #fff;
     font-size: 50px;
 }
-/* Termina Comencemos */
+/* ---------- Termina Comencemos ---------- */
 
-/* Empieza Imagen */
+/* ---------- Empieza Imagen ---------- */
 .contenedor .imagen {
     grid-area: imagen;
     width: 100%;
@@ -326,9 +326,9 @@ nav ul li a:hover {
     width: 100%;
     height: 80%;
 }
-/* Termina Imagen */
+/* ---------- Termina Imagen ---------- */
 
-/* Empieza Seccion de Escoger */
+/* ---------- Empieza Seccion de Escoger ---------- */
 .contenedor .escoje {
     grid-area: escoje;
     font-family: 'Great Vibes', cursive;
@@ -344,9 +344,9 @@ nav ul li a:hover {
     color: #fff;
     font-size: 80px;
 }
-/* Termina Seccion de Escoger */
+/* ---------- Termina Seccion de Escoger ---------- */
 
-/* Empieza Menu */
+/* ---------- Empieza Menu ---------- */
 .contenedor .menu {
     grid-area: menu;
     font-family: 'Quicksand', sans-serif;
@@ -360,7 +360,7 @@ nav ul li a:hover {
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
-/* Cafe */
+/* ---------- Cafe ---------- */
 .contenedor .menu .cafe {
     width: 200px;
     height: 200px;
@@ -388,7 +388,8 @@ nav ul li a:hover {
     color: #fff;
     text-transform: uppercase;
 }
-/* Frappe */
+
+/* ---------- Frappe ---------- */
 .contenedor .menu .frappe {
     width: 200px;
     height: 200px;
@@ -417,7 +418,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-/* Chocolate */
+/* ---------- Chocolate ---------- */
 .contenedor .menu .choco {
     width: 200px;
     height: 200px;
@@ -446,7 +447,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-/* Donas */
+/* ---------- Donas ---------- */
 .contenedor .menu .donas {
     width: 200px;
     height: 200px;
@@ -475,7 +476,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-/* Pastel */
+/* ---------- Pastel ---------- */
 .contenedor .menu .pastel {
     width: 200px;
     height: 200px;
@@ -504,7 +505,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-/* Snacks */
+/* ---------- Snacks ---------- */
 .contenedor .menu .snacks {
     width: 200px;
     height: 200px;
@@ -532,9 +533,9 @@ nav ul li a:hover {
     color: #fff;
     text-transform: uppercase;
 }
-/* Termina Menu */
+/* ---------- Termina Menu ---------- */
 
-/* Empieza Nosotros */
+/* ---------- Empieza Nosotros ---------- */
 .contenedor .nosotros {
     grid-area: nosotros;
     font-family: 'Great Vibes', cursive;
@@ -550,9 +551,9 @@ nav ul li a:hover {
     font-size: 100px;
     color: #fff;
 }
-/* Termina Nosotros */
+/* ---------- Termina Nosotros ---------- */
 
-/* Empieza Video 1 */
+/* ---------- Empieza Video 1 ---------- */
 .contenedor .video-1 {
     grid-area: video-1;
     border: 2px solid #fff;
@@ -580,9 +581,9 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
 }
-/* Termina Video 1 */
+/* ---------- Termina Video 1 ---------- */
 
-/* Empieza Video 2 */
+/* ---------- Empieza Video 2 ---------- */
 .contenedor .video-2 {
     grid-area: video-2;
     border: 2px solid #fff;
@@ -610,10 +611,10 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
 }
-/* Termina Video 2 */
+/* ---------- Termina Video 2 ---------- */
 
-/* Empieza Sucursal*/
-.contenedor .sucursal {
+/* ---------- Empieza Sucursal ---------- */
+.contenedor .sucursal { 
     grid-area: sucursal;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
@@ -663,9 +664,9 @@ nav ul li a:hover {
 .contenedor .sucursal .ubicacion p span {
     text-transform: uppercase;
 }
-/* Termina Sucursal */
+/* ---------- Termina Sucursal ---------- */
 
-/* Empieza Maps */
+/* ---------- Empieza Maps ---------- */
 .contenedor .maps {
     grid-area: maps;
     width: 100%;
@@ -673,9 +674,9 @@ nav ul li a:hover {
     margin-top: 50px; 
     overflow: hidden;  
 }
-/* Termina Maps */
+/* ---------- Termina Maps ---------- */
 
-/* Empieza Footer */
+/* ---------- Empieza Footer ---------- */
 .contenedor .footer {
     grid-area: footer;
     font-family: 'Quicksand', sans-serif;
@@ -712,7 +713,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-/* 1 */
+/* ---------- 1 ---------- */ 
 .contenedor .footer .siguenos .siguenos-1 {
     width: 370px;
     height: 90%;
@@ -743,7 +744,7 @@ nav ul li a:hover {
     color: #000;
     cursor: pointer;
 }
-/* 3 */
+/* ---------- 3 ---------- */
 .contenedor .footer .siguenos .siguenos-3 {
     width: 370px;
     height: 90%;
@@ -795,10 +796,10 @@ nav ul li a:hover {
 .contenedor .footer .siguenos .siguenos-3 .contact .watts p {
     font-size: 40px;
 }
-/* Termina Footer
+/* ---------- Termina Footer ---------- */
 
 
-/*Responsive*/
+/* ---------- Responsive ---------- */
 @media (max-width:991px) {
 
     .contenedor {
@@ -890,12 +891,12 @@ nav ul li a:hover {
         background-position: center;
     }
 
-    /* Scroll Responsive */
+    /* ---------- Scroll Responsive ---------- */
     .scrolltop {
         right: 20px;
     }
 
-    /*Carrusel Responsive*/
+    /* ---------- Carrusel Responsive ----------  ----------*/
     .contenedor .carrusel {
         height: 200px;
     }
@@ -928,7 +929,7 @@ nav ul li a:hover {
         display: none;
     }
 
-    /* Titulo Responsive */
+    /* ---------- Titulo Responsive ---------- */
     .contenedor .titulo {
         height: 40px;
         margin-top: 5px;
@@ -939,7 +940,7 @@ nav ul li a:hover {
         font-size: 20px;
     }
 
-    /* Frase Resposive */
+    /* ---------- Frase Resposive ---------- */
     .contenedor .frase {
         height: 75px;
         margin-top: 0;
@@ -952,7 +953,7 @@ nav ul li a:hover {
         font-size: 15px;
     }
 
-    /* Comencemos Responsive */
+    /* ---------- Comencemos Responsive ---------- */
     .contenedor .comencemos {
         height: 60px;
         margin-top: 10px;
@@ -963,7 +964,7 @@ nav ul li a:hover {
         font-size: 12px;
     }
 
-    /* Imagen Responsive */
+    /* ---------- Imagen Responsive ---------- */
     .contenedor .imagen {
         height: 60px;
         margin-top: 10px;
@@ -980,7 +981,7 @@ nav ul li a:hover {
         height: 80%;
     }
     
-    /* Escoge Responsive */
+    /* ---------- Escoge Responsive ---------- */
     .contenedor .escoje {
         height: 70px;
         margin-top: 20px;   
@@ -1009,7 +1010,7 @@ nav ul li a:hover {
         font-size: 14px;
     }
 
-    /* Video 2 Responsive */
+    /* ---------- Video 2 Responsive ---------- */
     .contenedor .video-2 {
         padding-bottom: 12px;
     }
@@ -1018,7 +1019,7 @@ nav ul li a:hover {
         font-size: 14px;
     }
 
-    /* Sucursal Responsive */
+    /* ---------- Sucursal Responsive ---------- */
     .contenedor .sucursal {
         height: auto;
         overflow: hidden; 
@@ -1033,12 +1034,12 @@ nav ul li a:hover {
         font-size: 12px;
     }
 
-    /* Maps Responsive */
+    /* ---------- Maps Responsive ---------- */
     .contenedor .maps {
         margin-top: 20px;  
     }
 
-    /* Footer Responsive */
+    /* ---------- Footer Responsive ---------- */
     .contenedor .footer {
         height: 100%;
         background-color: #000;
