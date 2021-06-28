@@ -35,7 +35,7 @@
                     <table class="tabla">
                         <thead>
                             <tr>
-                                <th>Propietario</th>
+                                <th>Targeta</th>
                                 <th>Activa</th>
                                 <th>Eliminar</th>
                             </tr>
@@ -104,11 +104,11 @@
 		<form id="formulario-tarjeta" class="formulario-tarjeta">
 			<div class="grupo">
 				<label for="inputNumero">Número Tarjeta</label>
-				<input type="text" id="inputNumero" maxlength="19" autocomplete="off" required>
+				<input type="text" id="inputNumero" name="num" maxlength="19" autocomplete="off" required>
 			</div>
 			<div class="grupo">
 				<label for="inputNombre">Nombre</label>
-				<input type="text" id="inputNombre" maxlength="19" autocomplete="off" required>
+				<input type="text" id="inputNombre" name="name" maxlength="19" autocomplete="off" required>
 			</div>
 			<div class="flexbox">
 				<div class="grupo expira">
@@ -131,10 +131,10 @@
 
 				<div class="grupo ccv">
 					<label for="inputCCV">CCV</label>
-					<input type="text" id="inputCCV" maxlength="3" required>
+					<input type="text" id="inputCCV" name="ccv2" maxlength="3" required>
 				</div>
 			</div>
-			<button class="btn-enviar">Agregar</button>
+			<button class="btn-enviar" disabled>Agregar</button>
 		</form>
 	</div>
 

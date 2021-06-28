@@ -101,7 +101,7 @@ nav ul li a:hover {
                          "targetas    targetas    targetas    targetas    direcciones direcciones direcciones direcciones"
                          "informacion informacion informacion informacion informacion informacion informacion informacion"
                          "preguntas   preguntas   preguntas   preguntas   tyc         tyc         tyc         tyc"
-                         "aviso       aviso       aviso       aviso       cerrar      cerrar      cerrar      cerrar";
+                         "aviso       aviso       aviso       aviso       cliente     cliente     cliente     cliente";
 }
 
 /* ---------- Seccion Mi Perfil ---------- */
@@ -363,8 +363,8 @@ nav ul li a:hover {
 }
 
 /* ---------- Seccion de cerrar secion ---------- */
-.contenedor .cerrar {
-    grid-area: cerrar;
+.contenedor .cliente {
+    grid-area: cliente;
     width: 100%;
     height: 100px;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
@@ -376,7 +376,7 @@ nav ul li a:hover {
     padding: 10px;
 }
 
-.contenedor .cerrar a {
+.contenedor .cliente a {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -390,12 +390,12 @@ nav ul li a:hover {
     transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.contenedor .cerrar:hover a {
+.contenedor .cliente:hover a {
     transform: translateY(-20px);
     box-shadow: 0 40px 70px rgba(0,0,0,0.5);
 }
 
-.contenedor .cerrar h2 {
+.contenedor .cliente h2 {
     font-size: 40px;
     color: #000;
 }
@@ -483,7 +483,7 @@ nav ul li a:hover {
                              "preguntas   preguntas   preguntas   preguntas"
                              "tyc         tyc         tyc         tyc"
                              "aviso       aviso       aviso       aviso"
-                             "cerrar      cerrar      cerrar      cerrar";
+                             "cliente     cliente     cliente     cliente";
     }
 
     /* ---------- Seccion Mi Perfil ---------- */
@@ -562,12 +562,12 @@ nav ul li a:hover {
         font-size: 25px;
     }
 
-    /* ---------- Seccion de cerrar secion ---------- */
-    .contenedor .cerrar {
+    /* ---------- Seccion de servicios al cliente ---------- */
+    .contenedor .cliente {
         height: 70px;
     }
 
-    .contenedor .cerrar h2 {
+    .contenedor .cliente h2 {
         font-size: 25px;
     }
 }

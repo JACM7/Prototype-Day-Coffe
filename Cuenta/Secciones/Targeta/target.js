@@ -9,6 +9,20 @@ const tarjeta = document.querySelector('#tarjeta'),
 	  yearExpiracion = document.querySelector('#tarjeta .year');
 	  ccv = document.querySelector('#tarjeta .ccv');
 
+// Evito Refresh de la Pagina
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault();
+	formulario.reset();
+	numeroTarjeta.innerHTML = "#### #### #### ####";
+	nombreTarjeta.innerHTML = "Nombre Apellido";
+	ccv.innerHTML = "";
+	mesExpiracion.innerHTML = "MM";
+	yearExpiracion.innerHTML = "AA";
+	firma.innerHTML = "";
+	
+	mostrarFrente();
+});
+
 // * Volteamos la tarjeta para mostrar el frente.
 const mostrarFrente = () => {
 	if(tarjeta.classList.contains('active')){
@@ -126,15 +140,19 @@ formulario.inputCCV.addEventListener('keyup', () => {
 
 
 // Targetero
-const botonAgr = document.querySelector('.btn-enviar');
-botonAgr.addEventListener('click', botonClicked);
-
 const contenedor = document.querySelector('.tablaCuerpo');
 
-function botonClicked(even) {
+const botonAgr = document.querySelector('.btn-enviar');
+botonAgr.addEventListener('click', () => {
+	const numeroFinal = formulario.num.value;
+	
+	agregaDatos(numeroFinal);
+});
+
+function agregaDatos(numeroFinal) {
 	const agregaTr = document.createElement('tr');
     agregaTr.classList.add('agregado');
-    const contenido = ` <td id="nombre"></td>
+    const contenido = ` <td>${numeroFinal}</td>
 						<td><input type="checkbox" checked></td>
                         <td class="elimina"><button>Eliminar</button></td>`;
 
@@ -144,7 +162,39 @@ function botonClicked(even) {
     agregaTr.querySelector('.elimina').addEventListener('click', eliminaProd);
 }
 
+// Eliminar Productos
 function eliminaProd(event) {
     const botonClick = event.target;
     botonClick.closest('tr').remove();
 }
+
+// Hbilitar Boton cuando los campos esten llenos
+function habilitar() {
+	const numeroFinal = formulario.num.value;
+	const nombreFinal = formulario.name.value;
+	const ccvFinal = formulario.ccv2.value;
+	const mesFinal = formulario.mes.value;
+	const yearFinal = formulario.year.value;
+	val = 0;
+
+	if (numeroFinal == "") {
+		val++;
+	}
+
+	if (nombreFinal == "") {
+		val++;
+	}
+
+	if (ccvFinal == "") {
+		val++;
+	}
+
+	if (val == 0) {
+		botonAgr.disabled = false;
+	} else {
+		botonAgr.disabled = true;
+	}
+}
+formulario.num.addEventListener('keyup', habilitar);
+formulario.name.addEventListener('keyup', habilitar);
+formulario.ccv2.addEventListener('keyup', habilitar);
