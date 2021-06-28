@@ -123,3 +123,28 @@ formulario.inputCCV.addEventListener('keyup', () => {
 
 	ccv.textContent = formulario.inputCCV.value;
 });
+
+
+// Targetero
+const botonAgr = document.querySelector('.btn-enviar');
+botonAgr.addEventListener('click', botonClicked);
+
+const contenedor = document.querySelector('.tablaCuerpo');
+
+function botonClicked(even) {
+	const agregaTr = document.createElement('tr');
+    agregaTr.classList.add('agregado');
+    const contenido = ` <td id="nombre"></td>
+						<td><input type="checkbox" checked></td>
+                        <td class="elimina"><button>Eliminar</button></td>`;
+
+    agregaTr.innerHTML = contenido;
+    contenedor.append(agregaTr);
+
+    agregaTr.querySelector('.elimina').addEventListener('click', eliminaProd);
+}
+
+function eliminaProd(event) {
+    const botonClick = event.target;
+    botonClick.closest('tr').remove();
+}
