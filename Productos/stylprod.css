@@ -338,20 +338,26 @@ nav ul li a:hover {
     grid-gap: 7px;
     padding: 0 16px;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: (12, auto);
+    grid-template-rows: (18, auto);
 
     grid-template-areas: "cafe      cafe      cafe      cafe      cafe        cafe        cafe        cafe"
                          "expreso   expreso   expreso   expreso   late        late        late        late"
+                         "moka      moka      moka      moka      capu        capu        capu        capu"
                          "frappe    frappe    frappe    frappe    frappe      frappe      frappe      frappe"
                          "oreo      oreo      oreo      oreo      clasico     clasico     clasico     clasico"
+                         "mango     mango     mango     mango     velvet      velvet      velvet      velvet"
                          "choco     choco     choco     choco     choco       choco       choco       choco"
                          "clascho   clascho   clascho   clascho   bombones    bombones    bombones    bombones"
+                         "blanco    blanco    blanco    blanco    alme        alme        alme        alme"
                          "donas     donas     donas     donas     donas       donas       donas       donas"
                          "glass     glass     glass     glass     azucarada   azucarada   azucarada   azucarada"
+                         "nutella   nutella   nutella   nutella   homero      homero      homero      homero"
                          "pasteles  pasteles  pasteles  pasteles  pasteles    pasteles    pasteles    pasteles"
                          "dchoc     dchoc     dchoc     dchoc     tiramisu    tiramisu    tiramisu    tiramisu"
+                         "deoreo    deoreo    deoreo    deoreo    tres        tres        tres        tres"
                          "snacks    snacks    snacks    snacks    snacks      snacks      snacks      snacks"
-                         "sandwich  sandwich  sandwich  sandwich  banderillas banderillas banderillas banderillas";
+                         "sandwich  sandwich  sandwich  sandwich  banderillas banderillas banderillas banderillas"
+                         "nachos    nachos    nachos    nachos    papas       papas       papas       papas";
 }
 
 /* ---------- Empieza Cafe ---------- */
@@ -475,7 +481,7 @@ nav ul li a:hover {
 
 .contenedor .expreso .inf-expreso .botones .boton2.activo {
     border: 1px solid #000;
-    color: #fff;
+    color: #000;
     background-color: #FAF54F;
 }
 
@@ -489,7 +495,6 @@ nav ul li a:hover {
     border: 3px solid #000;
     border-radius: 10px;
     display: flex;
-    margin-bottom: 60px;
 }
 
 .contenedor .late .pesos {
@@ -585,6 +590,223 @@ nav ul li a:hover {
 .contenedor .late .inf-late .botones .boton2.activo {
     border: 1px solid #000;
     color: #000;
+    background-color: #FAF54F;
+}
+
+/* ---------- Moka ---------- */
+.contenedor .moka {
+    grid-area: moka;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .moka .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .moka .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .moka .img-moka {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .moka .img-moka img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .moka .img-moka:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .moka .inf-moka {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .moka .inf-moka h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .moka .inf-moka p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .moka .inf-moka .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .moka .inf-moka .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .moka .inf-moka .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .moka .inf-moka .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #FAF54F;
+}
+
+/* ---------- Capuchino ---------- */
+.contenedor .capu {
+    grid-area: capu;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenedor .capu .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .capu .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .capu .img-capu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .capu .img-capu img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .capu .img-capu:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .capu .inf-capu {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .capu .inf-capu h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .capu .inf-capu p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .capu .inf-capu .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .capu .inf-capu .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .capu .inf-capu .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .capu .inf-capu .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #fff;
     background-color: #FAF54F;
 }
 /* ---------- Termina Cafe ---------- */
@@ -718,7 +940,6 @@ nav ul li a:hover {
     border: 3px solid #000;
     border-radius: 10px;
     display: flex;
-    margin-bottom: 60px;
 }
 
 .contenedor .clasico .pesos {
@@ -802,6 +1023,211 @@ nav ul li a:hover {
 }
 
 .contenedor .clasico .inf-clasico .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Mango ---------- */
+.contenedor .mango {
+    grid-area: mango;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .mango .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .mango .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .mango .img-mango {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .mango .img-mango img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .mango .img-mango:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .mango .inf-mango {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .mango .inf-mango h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .mango .inf-mango p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .mango .inf-mango .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .mango .inf-mango .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .mango .inf-mango .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Velvet ---------- */
+.contenedor .velvet {
+    grid-area: velvet;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenedor .velvet .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .velvet .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .velvet .img-velvet {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .velvet .img-velvet img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .velvet .img-velvet:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .velvet .inf-velvet {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .velvet .inf-velvet h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .velvet .inf-velvet p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .velvet .inf-velvet .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .velvet .inf-velvet .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .velvet .inf-velvet .botones .boton2 {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #FAF54F;
@@ -941,7 +1367,6 @@ nav ul li a:hover {
     border: 3px solid #000;
     border-radius: 10px;
     display: flex;
-    margin-bottom: 60px;
 }
 
 .contenedor .bombones .pesos {
@@ -1025,6 +1450,212 @@ nav ul li a:hover {
 }
 
 .contenedor .bombones .inf-bombones .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Blanco ---------- */
+.contenedor .blanco {
+    grid-area: blanco;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contenedor .blanco .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .blanco .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .blanco .img-blanco {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .blanco .img-blanco img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .blanco .img-blanco:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .blanco .inf-blanco {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .blanco .inf-blanco h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .blanco .inf-blanco p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .blanco .inf-blanco .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .blanco .inf-blanco .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .blanco .inf-blanco .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Almendras ---------- */
+.contenedor .alme {
+    grid-area: alme;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenedor .alme .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .alme .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .alme .img-alme {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .alme .img-alme img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .alme .img-alme:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .alme .inf-alme {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .alme .inf-alme h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .alme .inf-alme p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .alme .inf-alme .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .alme .inf-alme .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .alme .inf-alme .botones .boton2 {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #FAF54F;
@@ -1164,7 +1795,6 @@ nav ul li a:hover {
     border: 3px solid #000;
     border-radius: 10px;
     display: flex;
-    margin-bottom: 60px;
 }
 
 .contenedor .azucarada .pesos {
@@ -1248,6 +1878,211 @@ nav ul li a:hover {
 }
 
 .contenedor .azucarada .inf-azucarada .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Nutella ---------- */
+.contenedor .nutella {
+    grid-area: nutella;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .nutella .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .nutella .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .nutella .img-nutella {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .nutella .img-nutella img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .nutella .img-nutella:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .nutella .inf-nutella {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .nutella .inf-nutella h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .nutella .inf-nutella p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .nutella .inf-nutella .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .nutella .inf-nutella .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .nutella .inf-nutella .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Homero ---------- */
+.contenedor .homero {
+    grid-area: homero;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenedor .homero .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .homero .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .homero .img-homero {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .homero .img-homero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .homero .img-homero:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .homero .inf-homero {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .homero .inf-homero h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .homero .inf-homero p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .homero .inf-homero .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .homero .inf-homero .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .homero .inf-homero .botones .boton2 {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #FAF54F;
@@ -1387,7 +2222,6 @@ nav ul li a:hover {
     border: 3px solid #000;
     border-radius: 10px;
     display: flex;
-    margin-bottom: 80px;
 }
 
 .contenedor .tiramisu .pesos {
@@ -1471,6 +2305,211 @@ nav ul li a:hover {
 }
 
 .contenedor .tiramisu .inf-tiramisu .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- De Oreo ---------- */
+.contenedor .deoreo {
+    grid-area: deoreo;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .deoreo .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .deoreo .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .deoreo .img-deoreo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .deoreo .img-deoreo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .deoreo .img-deoreo:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .deoreo .inf-deoreo {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .deoreo .inf-deoreo h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .deoreo .inf-deoreo p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .deoreo .inf-deoreo .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .deoreo .inf-deoreo .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .deoreo .inf-deoreo .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- De Chocolate ---------- */
+.contenedor .tres {
+    grid-area: tres;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenedor .tres .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .tres .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .tres .img-tres {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .tres .img-tres img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .tres .img-tres:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .tres .inf-tres {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .tres .inf-tres h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .tres .inf-tres p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .tres .inf-tres .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .tres .inf-tres .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .tres .inf-tres .botones .boton2 {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #FAF54F;
@@ -1610,7 +2649,6 @@ nav ul li a:hover {
     border: 3px solid #000;
     border-radius: 10px;
     display: flex;
-    margin-bottom: 100px;
 }
 
 .contenedor .banderillas .pesos {
@@ -1702,6 +2740,217 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
+
+/* ---------- Sandwich ---------- */
+.contenedor .nachos {
+    grid-area: nachos;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.contenedor .nachos .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .nachos .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .nachos .img-nachos {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .nachos .img-nachos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .nachos .img-nachos:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .nachos .inf-nachos {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .nachos .inf-nachos h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .nachos .inf-nachos p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .nachos .inf-nachos .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .nachos .inf-nachos .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .nachos .inf-nachos .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* ---------- Papas ---------- */
+.contenedor .papas {
+    grid-area: papas;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.contenedor .papas .pesos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 10;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .papas .pesos p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .papas .img-papas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor .papas .img-papas img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+	transition: all 500ms ease-out;
+}
+
+.contenedor .papas .img-papas:hover img {
+    transform: scale(1.15);
+}
+
+.contenedor .papas .inf-papas {
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor .papas .inf-papas h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .papas .inf-papas p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #804000;
+}
+
+.contenedor .papas .inf-papas .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor .papas .inf-papas .botones .boton1 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .papas .inf-papas .botones .boton2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FAF54F;
+    color: #FAF54F;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.contenedor .papas .inf-papas .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
 /* ---------- Termina Pastel ---------- */
 
 /* ---------- Responsive ---------- */
@@ -1713,21 +2962,33 @@ nav ul li a:hover {
         grid-template-areas: "cafe      cafe      cafe      cafe"
                              "expreso   expreso   expreso   expreso"
                              "late      late      late      late"
+                             "moka      moka      moka      moka"
+                             "capu      capu      capu      capu"
                              "frappe    frappe    frappe    frappe"
                              "oreo      oreo      oreo      oreo"      
                              "clasico   clasico   clasico   clasico"
+                             "mango     mango     mango     mango"
+                             "velvet    velvet    velvet    velvet"
                              "choco     choco     choco     choco"
                              "clascho   clascho   clascho   clascho"   
                              "bombones  bombones  bombones  bombones"
+                             "blanco    blanco    blanco    blanco"
+                             "alme      alme      alme      alme"
                              "donas     donas     donas     donas"
-                             "glass     glass     glass     glass"     
+                             "glass     glass     glass     glass"  
+                             "nutella   nutella   nutella   nutella"
+                             "homero    homero    homero    homero"   
                              "azucarada azucarada azucarada azucarada"
                              "pasteles  pasteles  pasteles  pasteles"
                              "dchoc     dchoc     dchoc     dchoc"     
                              "tiramisu  tiramisu  tiramisu  tiramisu"
+                             "deoreo    deoreo    deoreo    deoreo"
+                             "tres      tres      tres      tres"
                              "snacks    snacks    snacks    snacks"
                              "sandwich  sandwich  sandwich  sandwich"  
-                             "banderillas banderillas banderillas banderillas";
+                             "banderillas banderillas banderillas banderillas"
+                             "nachos    nachos    nachos     nachos"
+                             "papas     papas     papas      papas";
     }
     
     header {
@@ -1871,6 +3132,44 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
+    .contenedor .moka .inf-moka h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .moka .inf-moka p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .moka .inf-moka .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .moka .inf-moka .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .capu .inf-capu h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .capu .inf-capu p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .capu .inf-capu .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .capu .inf-capu .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
     /* ---------- Empieza Frappe ---------- */
     .contenedor .frappe {
         height: 60px;
@@ -1914,6 +3213,44 @@ nav ul li a:hover {
     }
     
     .contenedor .clasico .inf-clasico .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .mango .inf-mango h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .mango .inf-mango p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .mango .inf-mango .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .mango .inf-mango .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .velvet .inf-velvet h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .velvet .inf-velvet p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .velvet .inf-velvet .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .velvet .inf-velvet .botones .boton2 {
         padding: 5px;
         font-size: 10px;
     }   
@@ -1965,6 +3302,44 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
+    .contenedor .blanco .inf-blanco h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .blanco .inf-blanco p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .blanco .inf-blanco .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .blanco .inf-blanco .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .alme .inf-alme h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .alme .inf-alme p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .alme .inf-alme .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .alme .inf-alme .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
     /* ---------- Empieza Donas ---------- */
     .contenedor .donas {
         height: 60px;
@@ -2008,6 +3383,44 @@ nav ul li a:hover {
     }
     
     .contenedor .azucarada .inf-azucarada .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .nutella .inf-nutella h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .nutella .inf-nutella p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .nutella .inf-nutella .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .nutella .inf-nutella .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .homero .inf-homero h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .homero .inf-homero p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .homero .inf-homero .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .homero .inf-homero .botones .boton2 {
         padding: 5px;
         font-size: 10px;
     }   
@@ -2059,6 +3472,44 @@ nav ul li a:hover {
         font-size: 10px;
     }   
 
+    .contenedor .deoreo .inf-deoreo h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .deoreo .inf-deoreo p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .deoreo .inf-deoreo .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .deoreo .inf-deoreo .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .tres .inf-tres h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .tres .inf-tres p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .tres .inf-tres .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .tres .inf-tres .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
     /* ---------- Empieza Snacks ---------- */
     .contenedor .snacks {
         height: 60px;
@@ -2105,6 +3556,46 @@ nav ul li a:hover {
         padding: 5px;
         font-size: 10px;
     }   
+
+    .contenedor .nachos .inf-nachos h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .nachos .inf-nachos p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .nachos .inf-nachos .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .nachos .inf-nachos .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+    .contenedor .papas .inf-papas h2 {
+        font-size: 25px;
+    }
+    
+    .contenedor .papas .inf-papas p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .contenedor .papas .inf-papas .botones .boton1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .contenedor .papas .inf-papas .botones .boton2 {
+        padding: 5px;
+        font-size: 10px;
+    }   
+
+
 }
 
 
