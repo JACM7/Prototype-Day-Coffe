@@ -899,11 +899,11 @@ nav ul li a:hover {
 
     /* ---------- Carrusel Responsive ----------  ----------*/
     .contenedor .carrusel {
-        height: 200px;
+        height: 150px;
     }
 
     .contenedor .carrusel .swiper-slide .info {
-        top: 75%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 80%;

@@ -697,7 +697,7 @@ nav ul li a:hover {
 
 .contenedor .moka .inf-moka .botones .boton2.activo {
     border: 1px solid #000;
-    color: #fff;
+    color: #000;
     background-color: #FAF54F;
 }
 
@@ -806,7 +806,7 @@ nav ul li a:hover {
 
 .contenedor .capu .inf-capu .botones .boton2.activo {
     border: 1px solid #000;
-    color: #fff;
+    color: #000;
     background-color: #FAF54F;
 }
 /* ---------- Termina Cafe ---------- */
@@ -930,6 +930,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .oreo .inf-oreo .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Clásico ---------- */
 .contenedor .clasico {
     grid-area: clasico;
@@ -1030,6 +1036,12 @@ nav ul li a:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #000;
+}
+
+.contenedor .clasico .inf-clasico .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
 }
 
 /* ---------- Mango ---------- */
@@ -1134,6 +1146,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .mango .inf-mango .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Velvet ---------- */
 .contenedor .velvet {
     grid-area: velvet;
@@ -1235,6 +1253,12 @@ nav ul li a:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #000;
+}
+
+.contenedor .velvet .inf-velvet .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
 }
 /* ---------- Termina Frappe ---------- */
 
@@ -1357,6 +1381,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .clascho .inf-clascho .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Bombones ---------- */
 .contenedor .bombones {
     grid-area: bombones;
@@ -1457,6 +1487,12 @@ nav ul li a:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #000;
+}
+
+.contenedor .bombones .inf-bombones .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
 }
 
 /* ---------- Blanco ---------- */
@@ -1562,6 +1598,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .blanco .inf-blanco .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Almendras ---------- */
 .contenedor .alme {
     grid-area: alme;
@@ -1664,6 +1706,13 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
+
+.contenedor .alme .inf-alme .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Termina Chocolate ---------- */
 
 /* ---------- Empieza Donas ---------- */
@@ -1785,6 +1834,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .glass .inf-glass .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Azucarada ---------- */
 .contenedor .azucarada {
     grid-area: azucarada;
@@ -1885,6 +1940,12 @@ nav ul li a:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #000;
+}
+
+.contenedor .azucarada .inf-azucarada .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
 }
 
 /* ---------- Nutella ---------- */
@@ -1989,6 +2050,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .nutella .inf-nutella .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Homero ---------- */
 .contenedor .homero {
     grid-area: homero;
@@ -2091,6 +2158,13 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
+
+.contenedor .homero .inf-homero .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Termina Donas ---------- */
 
 /* ---------- Empieza Pastel ---------- */
@@ -2212,6 +2286,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .dchoc .inf-dchoc .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Tiramisu ---------- */
 .contenedor .tiramisu { 
     grid-area: tiramisu;
@@ -2312,6 +2392,12 @@ nav ul li a:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #000;
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
 }
 
 /* ---------- De Oreo ---------- */
@@ -2416,6 +2502,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .deoreo .inf-deoreo .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- De Chocolate ---------- */
 .contenedor .tres {
     grid-area: tres;
@@ -2518,6 +2610,13 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: #000;
 }
+
+.contenedor .tres .inf-tres .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Termina Pastel ---------- */
 
 /* ---------- Empieza Snacks ---------- */
@@ -2639,6 +2738,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .sandwich .inf-sandwich .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Banderillas ---------- */
 .contenedor .banderillas {
     grid-area: banderillas;
@@ -2741,6 +2846,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+.contenedor .banderillas .inf-banderillas .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
+}
+
 /* ---------- Sandwich ---------- */
 .contenedor .nachos {
     grid-area: nachos;
@@ -2841,6 +2952,12 @@ nav ul li a:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #000;
+}
+
+.contenedor .nachos .inf-nachos .botones .boton2.activo {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FAF54F;
 }
 
 /* ---------- Papas ---------- */
@@ -2975,10 +3092,10 @@ nav ul li a:hover {
                              "blanco    blanco    blanco    blanco"
                              "alme      alme      alme      alme"
                              "donas     donas     donas     donas"
-                             "glass     glass     glass     glass"  
+                             "glass     glass     glass     glass"
+                             "azucarada azucarada azucarada azucarada"  
                              "nutella   nutella   nutella   nutella"
                              "homero    homero    homero    homero"   
-                             "azucarada azucarada azucarada azucarada"
                              "pasteles  pasteles  pasteles  pasteles"
                              "dchoc     dchoc     dchoc     dchoc"     
                              "tiramisu  tiramisu  tiramisu  tiramisu"
