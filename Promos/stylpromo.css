@@ -120,6 +120,7 @@ nav ul li a:hover {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow-x: hidden;
 }
 
 .contenedor .carr-promo .swiper-slide {

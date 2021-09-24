@@ -63,35 +63,35 @@ sr.reveal('.snacks', {
 sr.reveal('.sucursal', {
     duration: 2000,
     origin: 'rigth',
-    distance: '-10px'
+    distance: '-100px'
 })
 
 sr.reveal('.maps', {
     duration: 2000,
     origin: 'left',
-    distance: '-10px'
+    distance: '-100px'
 })
 
 sr.reveal('.video-1', {
     duration: 2000,
     origin: 'left',
-    distance: '-10px'
+    distance: '100px'
 })
 
 sr.reveal('.video-2', {
     duration: 2000,
     origin: 'right',
-    distance: '-10px'
+    distance: '100px'
 })
 
 sr.reveal('.siguenos-1', {
     duration: 2000,
     origin: 'top',
-    distance: '-100px'
+    distance: '200px'
 })
 
 sr.reveal('.siguenos-3', {
     duration: 2000,
     origin: 'bottom',
-    distance: '-100px'
+    distance: '200px'
 })
