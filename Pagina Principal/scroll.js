@@ -87,11 +87,11 @@ sr.reveal('.video-2', {
 sr.reveal('.siguenos-1', {
     duration: 2000,
     origin: 'top',
-    distance: '200px'
+    distance: '100px'
 })
 
 sr.reveal('.siguenos-3', {
     duration: 2000,
     origin: 'bottom',
-    distance: '200px'
+    distance: '100px'
 })

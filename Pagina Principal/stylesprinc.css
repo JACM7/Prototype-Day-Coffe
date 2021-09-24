@@ -13,7 +13,6 @@ html {
 
 body {
     min-height: 300vh;
-    overflow-x: hidden;
     background-color: #804000;
 }
 
@@ -166,6 +165,7 @@ nav ul li a:hover {
     display: grid;
     grid-gap: 5px;
     padding: 0 16px;
+    overflow-x: hidden;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: (11, auto);
 
