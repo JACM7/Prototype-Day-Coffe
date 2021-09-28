@@ -469,20 +469,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .expreso .inf-expreso .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .expreso .inf-expreso .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .expreso .inf-expreso .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .expreso .inf-expreso .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .expreso .inf-expreso .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .expreso .inf-expreso .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .expreso .inf-expreso .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Late ---------- */
@@ -577,20 +599,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .late .inf-late .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .late .inf-late .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .late .inf-late .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .late .inf-late .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .late .inf-late .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .late .inf-late .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .late .inf-late .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Moka ---------- */
@@ -685,20 +729,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .moka .inf-moka .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .moka .inf-moka .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .moka .inf-moka .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .moka .inf-moka .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .moka .inf-moka .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .moka .inf-moka .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .moka .inf-moka .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Capuchino ---------- */
@@ -794,20 +860,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .capu .inf-capu .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .capu .inf-capu .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .capu .inf-capu .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .capu .inf-capu .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .capu .inf-capu .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .capu .inf-capu .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .capu .inf-capu .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 /* ---------- Termina Cafe ---------- */
 
@@ -920,20 +1008,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .oreo .inf-oreo .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .oreo .inf-oreo .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .oreo .inf-oreo .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .oreo .inf-oreo .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .oreo .inf-oreo .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .oreo .inf-oreo .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .oreo .inf-oreo .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Clásico ---------- */
@@ -1028,20 +1138,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .clasico .inf-clasico .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .clasico .inf-clasico .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .clasico .inf-clasico .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .clasico .inf-clasico .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .clasico .inf-clasico .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .clasico .inf-clasico .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .clasico .inf-clasico .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Mango ---------- */
@@ -1136,20 +1268,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .mango .inf-mango .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .mango .inf-mango .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .mango .inf-mango .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .mango .inf-mango .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .mango .inf-mango .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .mango .inf-mango .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .mango .inf-mango .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Velvet ---------- */
@@ -1245,20 +1399,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .velvet .inf-velvet .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .velvet .inf-velvet .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .velvet .inf-velvet .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .velvet .inf-velvet .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .velvet .inf-velvet .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .velvet .inf-velvet .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .velvet .inf-velvet .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 /* ---------- Termina Frappe ---------- */
 
@@ -1371,20 +1547,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .clascho .inf-clascho .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .clascho .inf-clascho .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .clascho .inf-clascho .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .clascho .inf-clascho .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .clascho .inf-clascho .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .clascho .inf-clascho .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .clascho .inf-clascho .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Bombones ---------- */
@@ -1479,20 +1677,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .bombones .inf-bombones .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .bombones .inf-bombones .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .bombones .inf-bombones .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .bombones .inf-bombones .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .bombones .inf-bombones .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .bombones .inf-bombones .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .bombones .inf-bombones .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Blanco ---------- */
@@ -1588,20 +1808,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .blanco .inf-blanco .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .blanco .inf-blanco .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .blanco .inf-blanco .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .blanco .inf-blanco .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .blanco .inf-blanco .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .blanco .inf-blanco .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .blanco .inf-blanco .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Almendras ---------- */
@@ -1697,20 +1939,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .alme .inf-alme .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .alme .inf-alme .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .alme .inf-alme .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .alme .inf-alme .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .alme .inf-alme .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .alme .inf-alme .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .alme .inf-alme .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Termina Chocolate ---------- */
@@ -1824,20 +2088,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .glass .inf-glass .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .glass .inf-glass .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .glass .inf-glass .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .glass .inf-glass .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .glass .inf-glass .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .glass .inf-glass .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .glass .inf-glass .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Azucarada ---------- */
@@ -1932,20 +2218,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .azucarada .inf-azucarada .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .azucarada .inf-azucarada .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .azucarada .inf-azucarada .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .azucarada .inf-azucarada .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .azucarada .inf-azucarada .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .azucarada .inf-azucarada .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .azucarada .inf-azucarada .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Nutella ---------- */
@@ -2040,20 +2348,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .nutella .inf-nutella .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .nutella .inf-nutella .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .nutella .inf-nutella .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .nutella .inf-nutella .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .nutella .inf-nutella .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .nutella .inf-nutella .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .nutella .inf-nutella .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Homero ---------- */
@@ -2149,20 +2479,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .homero .inf-homero .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .homero .inf-homero .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .homero .inf-homero .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .homero .inf-homero .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .homero .inf-homero .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .homero .inf-homero .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .homero .inf-homero .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Termina Donas ---------- */
@@ -2276,20 +2628,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .dchoc .inf-dchoc .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .dchoc .inf-dchoc .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .dchoc .inf-dchoc .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .dchoc .inf-dchoc .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .dchoc .inf-dchoc .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .dchoc .inf-dchoc .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .dchoc .inf-dchoc .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Tiramisu ---------- */
@@ -2384,20 +2758,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .tiramisu .inf-tiramisu .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .tiramisu .inf-tiramisu .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .tiramisu .inf-tiramisu .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .tiramisu .inf-tiramisu .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .tiramisu .inf-tiramisu .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- De Oreo ---------- */
@@ -2492,20 +2888,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .deoreo .inf-deoreo .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .deoreo .inf-deoreo .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .deoreo .inf-deoreo .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .deoreo .inf-deoreo .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .deoreo .inf-deoreo .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .deoreo .inf-deoreo .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .deoreo .inf-deoreo .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- De Chocolate ---------- */
@@ -2601,20 +3019,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .tres .inf-tres .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .tres .inf-tres .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .tres .inf-tres .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .tres .inf-tres .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .tres .inf-tres .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .tres .inf-tres .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .tres .inf-tres .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Termina Pastel ---------- */
@@ -2728,20 +3168,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .sandwich .inf-sandwich .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .sandwich .inf-sandwich .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .sandwich .inf-sandwich .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .sandwich .inf-sandwich .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .sandwich .inf-sandwich .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .sandwich .inf-sandwich .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .sandwich .inf-sandwich .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Banderillas ---------- */
@@ -2836,20 +3298,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .banderillas .inf-banderillas .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .banderillas .inf-banderillas .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .banderillas .inf-banderillas .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .banderillas .inf-banderillas .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .banderillas .inf-banderillas .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .banderillas .inf-banderillas .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .banderillas .inf-banderillas .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Sandwich ---------- */
@@ -2944,20 +3428,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .nachos .inf-nachos .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .nachos .inf-nachos .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .nachos .inf-nachos .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .nachos .inf-nachos .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .nachos .inf-nachos .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .nachos .inf-nachos .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .nachos .inf-nachos .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 
 /* ---------- Papas ---------- */
@@ -3053,20 +3559,42 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-.contenedor .papas .inf-papas .botones .boton2 {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #FAF54F;
-    color: #FAF54F;
-    font-size: 15px;
+.contenedor .papas .inf-papas .botones label {
     cursor: pointer;
-    background-color: #000;
 }
 
-.contenedor .papas .inf-papas .botones .boton2.activo {
-    border: 1px solid #000;
-    color: #000;
-    background-color: #FAF54F;
+.contenedor .papas .inf-papas .botones label input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor .papas .inf-papas .botones label span {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    padding: 10px 15px;
+    color: rgb(243, 247, 4);
+    border: 2px solid rgb(243, 247, 4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.contenedor .papas .inf-papas .botones label span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor .papas .inf-papas .botones label input[type="checkbox"]:checked ~ span {
+    background: rgb(243, 247, 4);
+    color: #fff;
 }
 /* ---------- Termina Pastel ---------- */
 
@@ -3225,7 +3753,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .expreso .inf-expreso .botones .boton2 {
+    .contenedor .expreso .inf-expreso .botones label span {
         padding: 5px;
         font-size: 10px;
     }    
@@ -3244,7 +3772,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .late .inf-late .botones .boton2 {
+    .contenedor .late .inf-late .botones label span  {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3263,7 +3791,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .moka .inf-moka .botones .boton2 {
+    .contenedor .moka .inf-moka .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3282,7 +3810,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .capu .inf-capu .botones .boton2 {
+    .contenedor .capu .inf-capu .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3310,7 +3838,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .oreo .inf-oreo .botones .boton2 {
+    .contenedor .oreo .inf-oreo .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3329,7 +3857,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .clasico .inf-clasico .botones .boton2 {
+    .contenedor .clasico .inf-clasico .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3348,7 +3876,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .mango .inf-mango .botones .boton2 {
+    .contenedor .mango .inf-mango .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3367,7 +3895,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .velvet .inf-velvet .botones .boton2 {
+    .contenedor .velvet .inf-velvet .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3395,7 +3923,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .clascho .inf-clascho .botones .boton2 {
+    .contenedor .clascho .inf-clascho .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3414,7 +3942,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .bombones .inf-bombones .botones .boton2 {
+    .contenedor .bombones .inf-bombones .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3433,7 +3961,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .blanco .inf-blanco .botones .boton2 {
+    .contenedor .blanco .inf-blanco .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3452,7 +3980,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .alme .inf-alme .botones .boton2 {
+    .contenedor .alme .inf-alme .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3480,7 +4008,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .glass .inf-glass .botones .boton2 {
+    .contenedor .glass .inf-glass .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3499,7 +4027,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .azucarada .inf-azucarada .botones .boton2 {
+    .contenedor .azucarada .inf-azucarada .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3518,7 +4046,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .nutella .inf-nutella .botones .boton2 {
+    .contenedor .nutella .inf-nutella .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3537,7 +4065,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .homero .inf-homero .botones .boton2 {
+    .contenedor .homero .inf-homero .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3565,7 +4093,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .dchoc .inf-dchoc .botones .boton2 {
+    .contenedor .dchoc .inf-dchoc .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3584,7 +4112,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .tiramisu .inf-tiramisu .botones .boton2 {
+    .contenedor .tiramisu .inf-tiramisu .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3603,7 +4131,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .deoreo .inf-deoreo .botones .boton2 {
+    .contenedor .deoreo .inf-deoreo .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3622,7 +4150,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .tres .inf-tres .botones .boton2 {
+    .contenedor .tres .inf-tres .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3650,7 +4178,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .sandwich .inf-sandwich .botones .boton2 {
+    .contenedor .sandwich .inf-sandwich .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3669,7 +4197,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .banderillas .inf-banderillas .botones .boton2 {
+    .contenedor .banderillas .inf-banderillas .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3688,7 +4216,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .nachos .inf-nachos .botones .boton2 {
+    .contenedor .nachos .inf-nachos .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
@@ -3707,7 +4235,7 @@ nav ul li a:hover {
         font-size: 10px;
     }
     
-    .contenedor .papas .inf-papas .botones .boton2 {
+    .contenedor .papas .inf-papas .botones label span {
         padding: 5px;
         font-size: 10px;
     }   
